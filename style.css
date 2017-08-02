@@ -1,0 +1,266 @@
+/**
+ * Theme Name:          Mai Law Pro
+ * Description:         Mai Law Pro is a custom child theme for The Genesis Framework.
+ * Author:              Mike Hemberger, BizBudding Inc
+ * Author URI:          https://bizbudding.com/
+ * Version:             1.0.0
+ *
+ * Template:            genesis
+ *
+ * License:             GPL-2.0+
+ * License URI:         http://www.opensource.org/licenses/gpl-license.php
+ */
+
+
+/* Table of Contents
+
+	- Defaults
+	- Structure and Layout
+	- Common Classes
+	- Content Area
+		- Entry Meta
+	- Media Queries (mobile-first)
+	- Media Queries (mobile-second)
+
+*/
+
+
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/**
+ * Retina Logo
+ *
+ * If uploading double sized (retina) image,
+ * put exactly half the width in pixels for retina display.
+ * Example: Retina (2x) image is 360px by 90px, CSS should be:
+ * max-width: 180px;
+ */
+.wp-custom-logo .site-title a {
+	/* max-width: 180px; */
+}
+
+a {
+	color: #731820;
+}
+
+body,
+.section,
+.site-header {
+	background-color: #f5f2eb;
+}
+
+.section:nth-of-type(even) {
+	background-color: #fcfbf8;
+}
+
+.nav-primary,
+.nav-secondary,
+.site-footer {
+	background-color: #424342;
+}
+
+.nav-header a:hover,
+.nav-header .current-menu-item > a,
+.nav-header .current-menu-ancestor > a,
+.nav-header .menu-item-has-children:not(.highlight):hover > a,
+.nav-header .nav-search:hover,
+.nav-header .sub-menu a:hover,
+.nav-header .sub-menu .current-menu-item > a,
+.nav-header .sub-menu .current-menu-item > a:hover {
+	color: #731820;
+}
+
+.nav-primary .current-menu-ancestor > a,
+.nav-primary .current-menu-item > a,
+.nav-primary .menu-item-has-children:hover > a,
+.nav-primary .nav-search:hover,
+.nav-primary a:hover {
+	background-color: #353635;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title a,
+.adjacent-entry-pagination .pagination-previous a,
+.adjacent-entry-pagination .pagination-next a {
+	font-family: 'Lora', serif;
+}
+
+h1,
+.heading {
+	font-weight: 700;
+}
+
+.widget-title {
+	margin-bottom: 32px;
+}
+
+.sidebar .widget-title {
+	text-align: center;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button,
+.entry-content .more-link,
+.menu-item.highlight a,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce .button.alt.single_add_to_cart_button,
+.woocommerce .button.alt.checkout-button {
+	background-color: #731820;
+	color: #fff;
+}
+
+button:hover,
+button:focus,
+input:hover[type="button"],
+input:focus[type="button"],
+input:hover[type="reset"],
+input:focus[type="reset"],
+input:hover[type="submit"],
+input:focus[type="submit"],
+.button:hover,
+.button:focus,
+.entry-content .button:hover,
+.entry-content .button:focus,
+.entry-content .more-link:hover,
+.entry-content .more-link:focus,
+.menu-item.highlight.current-menu-item > a,
+.menu-item.highlight > a:hover,
+.menu-item.highlight > a:focus,
+.woocommerce a.button:hover,
+.woocommerce a.button:focus,
+.woocommerce button.button:hover,
+.woocommerce button.button:focus,
+.woocommerce input.button:hover,
+.woocommerce input.button:focus,
+.woocommerce .button.alt.single_add_to_cart_button:hover,
+.woocommerce .button.alt.single_add_to_cart_button:focus,
+.woocommerce .button.alt.checkout-button:hover,
+.woocommerce .button.alt.checkout-button:focus {
+	background-color: #5e141a;
+	color: #fff;
+}
+
+.button.alt,
+.comment-reply-link,
+.entry-content .button.alt,
+.entry-content .more-link,
+.footer-widgets .button,
+.site-footer .button,
+.woocommerce .actions .button,
+.woocommerce a.button.alt,
+.woocommerce a.button.add_to_cart_button {
+	background-color: #424342;
+	color: #fff;
+}
+
+.button.alt:hover,
+.button.alt:focus,
+.comment-reply-link:hover,
+.comment-reply-link:focus,
+.entry-content .button.alt:hover,
+.entry-content .button.alt:focus,
+.entry-content .more-link:hover,
+.entry-content .more-link:focus,
+.footer-widgets .button:hover,
+.footer-widgets .button:focus,
+.site-footer .button:hover,
+.site-footer .button:focus,
+.woocommerce .actions .button:hover,
+.woocommerce .actions .button:focus,
+.woocommerce a.button.alt:hover,
+.woocommerce a.button.alt:focus,
+.woocommerce a.button.add_to_cart_button:hover,
+.woocommerce a.button.add_to_cart_button:focus {
+	background-color: #292929;
+	color: #fff;
+}
+
+.archive-pagination a {
+	background-color: #424342;
+	color: #fff;
+}
+
+.archive-pagination .active a,
+.archive-pagination a:focus,
+.archive-pagination a:hover {
+	background-color: #74161e;
+	color: #fff;
+}
+
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+.image-bg .inner {
+	border: 6px solid rgba(0,0,0,0.075);
+}
+
+.image-bg .inner-dark {
+    background-color: rgba(53, 54, 53, 0.7);
+}
+
+.image-bg .inner-light {
+	background-color: rgba(245, 242, 235, 0.8);
+}
+
+.breadcrumb {
+	-webkit-font-smoothing: antialiased;
+}
+
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Entry Meta
+--------------------------------------------- */
+
+.entry-footer .entry-meta {
+	border-top: 1px solid #ebe9eb;
+}
+
+.flex-entry .entry-footer .entry-meta {
+	margin-top: 20px;
+}
+
+.entry-comments .comment-meta {
+	-webkit-font-smoothing: antialiased;
+}
+
+/* # Media Queries (mobile-first)
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1160px) {}
+
+@media only screen and (min-width: 993px) {}
+
+@media only screen and (min-width: 769px) {}
+
+@media only screen and (min-width: 545px) {}
+
+/* # Media Queries (mobile-second)
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1159px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 544px) {}
