@@ -12,5 +12,9 @@ Please visit http://support.maitheme.com/ for theme support.
 
 CHANGELOG
 
+= 1.1.0 =
+* Add noopener to footer creds link.
+* Bump dependency installer script to latest version.
+
 = 1.0.0 =
 * Initial release.
