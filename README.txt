@@ -8,13 +8,22 @@ INSTALL
 4. Customize your site via your wordpress dashboard Appearances > Customize and configure to your liking.
 
 SUPPORT
-Please visit http://support.maitheme.com/ for theme support.
+Please visit http://support.bizbudding.com/ for theme support.
 
 CHANGELOG
 
+= 1.3.0 =
+* Changed: Version bump for theme consistency.
+
+= 1.2.0 =
+* Changed: More refined base CSS.
+* Changed: Correct order of starter mobile-first CSS breakpoints.
+* Changed: Updated dependency installer to latest version.
+* Changed: Now use Composer for dependencies.
+
 = 1.1.0 =
-* Add noopener to footer creds link.
-* Bump dependency installer script to latest version.
+* Added: noopener rel tag to footer credits.
+* Changed: Bump dependency installer script to latest version.
 
 = 1.0.0 =
 * Initial release.
